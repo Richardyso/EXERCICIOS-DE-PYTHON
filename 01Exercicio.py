@@ -1,2 +1,1 @@
-a = ('Testando oooooooooooo printar')
-print = (a)
+print = ('Testando oooooooooooo printa')
