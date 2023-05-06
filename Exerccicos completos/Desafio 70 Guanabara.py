@@ -28,6 +28,6 @@ while True:
     else:
         break
 
-print(f'Produto mais de 100 Reias: R${acima100}')
+print(f'Produto mais de 100 Reias: {acima100}')
 print(f'Total gasto foi: R$ {total:5.2f}')
 print(f'O item mais barato foi {barato} e custou R$ {menor:2}')
