@@ -4,7 +4,7 @@ lanche = ('hamburguer', 'suco', 'pizza', 'pudim', 'batata frita')
 # TUPLAS CRUA COM ('','')
 # print(lanche)
 
-# TUPLAS ORGANIZADAS EM LISTA
+# TUPLAS ORGANIZADAS EM ORDEM ALFABETICA
 # print(sorted(lanche))
 
 # APENAS NOMES DAS TUPLAS
