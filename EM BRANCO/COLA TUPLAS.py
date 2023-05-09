@@ -51,3 +51,18 @@ lanche = ('hamburguer', 'suco', 'pizza', 'pudim', 'batata frita')
 # DICIONARIO{}
 # print(len(lanche))
 # print(lanche[0::3])
+
+
+# # Criando a primeira tupla com números
+# tupla1 = tuple(i for i in range(10))
+
+# # Criando a segunda tupla com palavras
+# tupla2 = ('zero', 'um', 'dois', 'três', 'quatro', 'cinco',
+#           'seis', 'sete', 'oito', 'nove', 'dez')
+
+# # Atribuindo o valor do segundo item da tupla2 ao primeiro item da tupla1
+# tupla1 = (tupla2[1],) + tupla1[1:]
+
+# # Imprimindo as tuplas combinadas
+# for i in range(10):
+#     print(tupla1[i], tupla2[i])
