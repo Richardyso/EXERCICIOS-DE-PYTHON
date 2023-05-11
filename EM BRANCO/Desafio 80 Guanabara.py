@@ -26,7 +26,7 @@ for x in range(0, 5):
 print(f'Lista Original=  {i}')
 z = min(i)
 c = max(i)
-if i2 > z and i2 < c:
+if i2 > z and i2 < c:  # i2 deveria ser o intervalo entre z e c
     t = min(i2)
     m = max(i2)
 i1.insert(0, z)
