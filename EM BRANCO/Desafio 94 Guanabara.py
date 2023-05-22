@@ -8,7 +8,7 @@ while True:
     d = {'nome': n, 'sexo': s, 'idade': i}
     l.append(d)
     idd.append(i)
-    ct = str(input('Continuar? ')).lower()
+    ct = str(input('Continuar? ')).lower()[0]
     if ct == 'n':
         break
 m = sum(idd)/len(l)
