@@ -1,43 +1,43 @@
 from time import sleep
 
 
-def linha():
-    print('=*'*20)
+def contador(i, f, p):
+    print(f'Contagem de {i} até {f} de {p} em {p}')
+
+    if p < 0:
+        p *= -1
+    if p == 0:
+        p == 1
+    if i < f:
+        cont = i
+        while cont <= f:
+            print(f'{cont} ', end='', flush=True)
+            cont = cont+p
+            sleep(1)
+        print('Fim')
+    else:
+        cont = i
+        while cont >= f:
+            print(f'{cont} ', end='', flush=True)
+            cont = cont-p
+            sleep(1)
+        print('Fim')
 
 
-def fim():
-    print('Fim')
+# Principal
+contador(1, 10, 1)
+contador(10, 0, 2)
 
-
-linha()
-passo1 = 1
-print('Contagem de 1 até 10 de 1 em 1:')
-for c in range(10):
-    print(f'{passo1}', end=' ', flush=True)
-    passo1 += 1
-    sleep(1)
-
-
-fim()
-linha()
-passo10 = 10
-print('Contagem de 10 até 0 de 2 em 2')
-for z in range(5):
-    print(passo10, end=' ', flush=True)
-    passo10 = passo10-2
-    sleep(1)
-fim()
-linha()
-
-inicio = int(input('Qual o inicio você quer? '))
+inicio = int(input('Qual o início você quer? '))
 final = int(input('Qual o valor final? '))
 passo = int(input('Qual o passo você quer? '))
-for a in range(inicio, final) or range(final, inicio):
-    if final > inicio:
-        print(inicio, end=' ', flush=True)
-        inicio = inicio+passo
+
+if final > inicio:
+    for a in range(inicio, final + 1, passo):
+        print(a, end=' ', flush=True)
         sleep(1)
-    if final < inicio:  # nao funciona
-        print(inicio, end=' ', flush=True)
-        inicio = inicio-passo
+else:
+    for a in range(inicio, final - 1, -passo):
+        print(a, end=' ', flush=True)
         sleep(1)
+print('Fim')
