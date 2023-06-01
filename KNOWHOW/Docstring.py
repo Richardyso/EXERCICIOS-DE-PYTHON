@@ -1,7 +1,7 @@
 def contador(i, f, p):
     """
     Teste de docstring
-    :parami: Inicio da contagem
+    :param: Inicio da contagem
     :paramf: Final da contagem
     :paramp: Passo da contagem
     :return: sem retorno
