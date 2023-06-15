@@ -1,4 +1,4 @@
-from uteis import numeros
+from modulos import numeros
 
 num = int(input('Digite um valor:'))
 fat = numeros.fatorial(num)
