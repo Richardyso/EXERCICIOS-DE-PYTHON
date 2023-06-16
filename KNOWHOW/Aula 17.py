@@ -6,3 +6,4 @@ for c in range(3):
     grupo.append(dado[:])
     dado.clear()
 print(len(grupo))
+#
